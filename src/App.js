@@ -3,6 +3,7 @@ import './App.css';
 import { About } from './components/About';
 import { Contact } from './components/Contact';
 import { Home } from './components/home';
+import { Login } from './components/Login/Login';
 import { Projects } from './components/Projects';
 import { Sidebar } from './components/sidebar';
 import { Skills } from './components/Skills';
@@ -15,6 +16,7 @@ function App() {
         <Sidebar />
         <div className='p-2 w-75'>
           <Routes>
+            <Route path="/login" element={<Login />} />
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
